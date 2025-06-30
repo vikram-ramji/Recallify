@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.tasks.reminder import send_reminder_email
+from ..tasks.reminder import send_reminder_email
 
 router = APIRouter(prefix="/reminders", tags=["Reminders"])
 
