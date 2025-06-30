@@ -1,0 +1,60 @@
+# 🔧 Global (applies to all subfolders)
+.env
+.env.*
+*.env
+*.log
+*.sqlite3
+*.db
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+*.bak
+*.swp
+.DS_Store
+*.vscode
+*.idea/
+*.coverage
+coverage.xml
+htmlcov/
+*.log
+*.pid
+
+# 🐍 Python-specific (api/)
+api/.venv/
+api/.pytest_cache/
+api/__pycache__/
+api/test.db
+api/instance/
+api/.mypy_cache/
+api/.ruff_cache/
+api/.pdm.toml
+api/poetry.lock
+
+# 🐳 Docker
+**/docker-compose.override.yml
+**/Dockerfile.dev
+
+# 🌐 Node/Next.js-specific (web/)
+web/.next/
+web/node_modules/
+web/.env.local
+web/.env.production
+web/.env.development
+web/.turbo/
+web/yarn.lock
+web/package-lock.json
+web/coverage/
+
+# 🧪 Test + Editor folders
+**/.pytest_cache/
+**/.coverage
+**/tests/__pycache__/
+
+# 📦 Optional (OS or misc)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
