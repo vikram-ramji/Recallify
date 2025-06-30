@@ -16,6 +16,8 @@ jobs:
     defaults:
       run:
         working-directory: api
+    env:
+      DATABASE_URL: sqlite:///./test.db
 
     steps:
       - name: Checkout repo
