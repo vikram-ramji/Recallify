@@ -1,4 +1,4 @@
-from app.main import app
+from ..app.main import app
 from uuid import UUID
 
 def test_create_user(client):
