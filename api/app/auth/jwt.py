@@ -29,6 +29,6 @@ def decode_token(token: str) -> dict[str, Any]:
     try:
         return decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     except ExpiredSignatureError:
-        raise ValueError("Token expired")
+        raise ValueError("Token expired!")
     except PyJWTError:
         raise ValueError("Invalid token")
