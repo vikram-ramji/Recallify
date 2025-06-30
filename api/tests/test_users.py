@@ -2,6 +2,7 @@ from ..app.main import app
 from uuid import UUID
 
 def test_create_user(client):
+    print([route.path for route in client.app.routes])  
     response = client.post("/users/", json={
         "email": "test_create@example.com"
     })
